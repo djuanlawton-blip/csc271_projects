@@ -1,0 +1,122 @@
+<!--
+Name: D'Juan Lawton
+Date: October 4, 2026
+Description: Product website Dashboard
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Character encoding -->
+         <meta charset="UTF-8">
+
+        <!--Title-->
+        <Title>DashBoard</Title>
+
+    </head>
+
+    <body>
+        <!--Main Heading-->
+        <h1> StudySync DashBoard</h1>
+
+        <hr>
+        <!--A paragraph that describes what StudySync does-->
+        <p>
+            The StudySync Dashboard gives students one central place to manage their academic
+            and personal responsibilities. It allows users to view upcoming assignments, events,
+            study sessions, and important deadlines while keeping track of their overall progress.
+            The dashboard also provides quick access to tasks, the calendar, schedules, and study sessions,
+            helping students stay organized and balance school, work, and personal activities.
+        </p>
+
+        <!--Link to the home page-->
+        <a href="studysync.html">Home page</a>
+
+        <p></p>
+
+        <!-- Logo Image-->
+         <img src="images/Logo.png" alt="StudySync logo" width="200" height="200">
+
+         <p></p>
+         <!--Images That relate to the topic-->
+         <img src="images/studyimage1.jpg"
+              alt="Two students studying together"
+              width="400"
+              height="250">
+        <img src="images/Studyimage2.jpg"
+             alt="Student organizing study materials"
+             width="400"
+             height="267">
+
+         <!--All of the users upcoming Tasks-->
+         <h2>My upcoming <strong>Tasks</strong></h2>
+
+         <table>
+            <tr>
+                <th>Tasks</th>
+                <th>Due Date</th>
+                <th>Category</th>
+            </tr>
+
+            <tr>
+                <td>Math homework</td>
+                <td>October 7</td>
+                <td>Class</td>
+            </tr>
+
+            <tr>
+                <td>English Reading</td>
+                <td>October 24</td>
+                <td>Class</td>
+            </tr>
+
+            <tr>
+                <td>Project Research</td>
+                <td>October 30</td>
+                <td>Work</td>
+            </tr>
+         </table>
+         <!--Form to Add a Task-->
+         <h2>Add a Task</h2>
+
+         <form>
+            <label for="Task">Task Name:</label>
+            <input type="Text" id="Task" name="Task" required> 
+            
+            <br>
+
+            <label for="Date">Due Date</label>
+            <input type="date" id="Date" name="Data" required>
+
+            <br>
+
+            <p>Task Type:</p>
+
+            <input type="radio" id="Class" name="type" value="Class">
+            <label for="Class">Class</label>
+
+            <input type="radio" id="work" name="type" value="work">
+            <label for="work">Work</label>
+
+            <input type="radio" id="personal" name="type" value="personal">
+            <label for="personal">Personal</label>
+
+            <br>
+
+            <input type="submit" value="Add Task">
+
+        </form>
+        <!-- Study Tips Video -->
+        <h2>Study Tips</h2>
+
+        <iframe width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/TjPFZaMe2yw?si=7Hd2D6C3sD3UupUf" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+        </iframe>
+
+    </body>
+</html>
