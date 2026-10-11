@@ -1,0 +1,99 @@
+/*
+Name: D'juan Lawton
+Date: October 11, 2026
+Description: Stylesheet for the StudySync website pages
+*/
+
+/* General page styling */
+body{
+    background-color: #f4f8fc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #253858;
+    margin: 20px;
+}
+
+/* Logo and heading */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Logo image */
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Main page headings */
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: #164a91;
+}
+
+/* Paragraph styling */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #444444;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #e3efff;
+    padding: 15px;
+}
+
+/* Unvisited links */
+a:link {
+    color: #0066cc;
+}
+
+/* Visited links */
+a:visited {
+    color: #6741a5;
+}
+
+/* Hovered links */
+a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+/* Calendar styling */
+#calendar {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #dddddd;
+}
+
+/* Event styling*/
+.event {
+    background-color: #dceaff;
+    color: #164a91;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* Calendar table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Calendar cells */
+th, td {
+    border: 1px solid #dddddd;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    background-color: #1665c1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
