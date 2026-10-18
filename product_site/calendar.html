@@ -18,98 +18,95 @@ Description: Product website Calendar
     
 
     <body>
-        <header>
-            <div class="logo">
-                <img src="images/logo.png" alt="StudySync Logo">
-                <h1>StudySync</h1>
+        <div class="header">
+            <img class="header-logo"
+                src="images/Logo.png"
+                alt="StudySync logo">
+
+            <a href="studysync.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="calendar.html" class = "active">Calendar</a>
+            <a href="">Tasks</a>
+            <a href="">About</a>
+        </div>
+
+        <div class = "content-wrapper">
+            <div class = "content">
+                <!--Main Heading-->
+                <h1>Calendar</h1>
+                <hr>
+
+                <main>
+                    <!--Section for the calendar-->
+                    <section id = calendar>
+                        <!--Heading for the month-->
+                        <h2>April 2026</h2>
+                        <!--Back button-->
+                        <button>Back</button>
+                        <!--Forward button-->
+                        <button>Forward</button>
+                        <!--Calendar table-->
+                        <table>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                
+                            </tr>
+
+                            <tr>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                
+                            </tr>
+
+                            <tr>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                
+                            </tr>
+
+                        </table>
+                    </section>
+                    <!--Today's events section-->
+                    <section>
+                        <h2>Today's Events</h2>
+                        <!--Lists of tasks-->
+                        <ul>
+                            <li class = event>Class-CSC271</li>
+                            <li class = event>Work-Shift</li>
+                            <li class = event>Personal-Take dog to vet</li>
+                        </ul>
+                        <!--View all tasks-->
+                        <h3>View All</h3>
+                    </section>
+                </main>
             </div>
-        </header>
-
-        <!--Main Heading-->
-        <h1>Calendar</h1>
-        <hr>
-        <!--Side Navigation-->
-        <nav>
-            <!--Side List of links-->
-            <ul>
-                <li><a href="studysync.html">Home</a></li>
-                <li><a href="dashboard.html">Dashborad</a></li>
-                <li>Tasks</li>
-                <li>Calendar</li>
-                <li>Schedule </li>
-                <li>Study Session</li>
-            </ul>
-        </nav>
-
-        <main>
-            <!--Section for the calendar-->
-            <section id = calendar>
-                <!--Heading for the month-->
-                <h2>April 2026</h2>
-                <!--Back button-->
-                <button>Back</button>
-                <!--Forward button-->
-                <button>Forward</button>
-                <!--Calendar table-->
-                <table>
-                    <tr>
-                        <th>Sun</th>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        
-                    </tr>
-
-                    <tr>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
-                        
-                    </tr>
-
-                    <tr>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
-                        
-                    </tr>
-
-                </table>
-            </section>
-            <!--Today's events section-->
-            <section>
-                <h2>Today's Events</h2>
-                <!--Lists of tasks-->
-                <ul>
-                    <li class = event>Class-CSC271</li>
-                    <li class = event>Work-Shift</li>
-                    <li class = event>Personal-Take dog to vet</li>
-                </ul>
-                <!--View all tasks-->
-                <h3>View All</h3>
-            </section>
-        </main>
+        </div>
 
 
 
