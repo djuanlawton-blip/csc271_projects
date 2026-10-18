@@ -1,32 +1,83 @@
 /*
 Name: D'juan Lawton
-Date: October 11, 2026
+Date: October 17, 2026
 Description: Stylesheet for the StudySync website pages
 */
 
 /* General page styling */
-body{
+body {
     background-color: #f4f8fc;
     font-family: Arial, Helvetica, sans-serif;
     color: #253858;
     margin: 20px;
 }
 
-/* Logo and heading */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+/* Header styling */
+.header {
+    overflow: hidden;
+    background-color: #164a91;
+    padding: 15px;
 }
 
-/* Logo image */
-.logo img {
-    width: 50px;
-    height: 50px;
+/* Header links */
+.header a:link,
+.header a:visited {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Header hover effect */
+.header a:hover,
+.header a:visited:hover {
+    background-color: white;
+    color: red;
+}
+
+/* Link click effect */
+.header a:active,
+.header a:visited:active {
+    background-color: #0b2f60;
+    color: red;
+}
+
+/* Current page */
+.header a.active:link,
+.header a.active:visited {
+    background-color: white;
+    color: #164a91;
+}
+
+/* Content wrapper */
+.content-wrapper {
+    display: flow-root;
+    width: 100%;
+}
+
+/* Main content */
+.content {
+    float: left;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px 5%;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+/* Header logo */
+.header-logo {
+    float: left;
+    width: 45px;
+    height: auto;
+    margin: 0 15px 0 0;
 }
 
 /* Main page headings */
-h1{
+h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
     color: #164a91;
@@ -39,28 +90,6 @@ p {
     color: #444444;
 }
 
-/* Navigation styling */
-nav {
-    background-color: #e3efff;
-    padding: 15px;
-}
-
-/* Unvisited links */
-a:link {
-    color: #0066cc;
-}
-
-/* Visited links */
-a:visited {
-    color: #6741a5;
-}
-
-/* Hovered links */
-a:hover {
-    color: #ff0000;
-    text-decoration: underline;
-}
-
 /* Calendar styling */
 #calendar {
     background-color: white;
@@ -68,7 +97,7 @@ a:hover {
     border: 1px solid #dddddd;
 }
 
-/* Event styling*/
+/* Event styling */
 .event {
     background-color: #dceaff;
     color: #164a91;
@@ -96,4 +125,57 @@ button {
     padding: 10px;
     border: none;
     border-radius: 5px;
+}
+
+/* Image styling */
+img {
+    float: left;
+    margin: 10px 20px 10px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Dashboard task section */
+.dashboard-tasks {
+    clear: both;
+    padding-top: 10px;
+}
+
+
+/* Design for mobile screens */
+@media screen and (max-width: 600px) {
+
+    /* Header links */
+    .header a:link,
+    .header a:visited {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* Main content */
+    .content {
+        float: none;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /* Paragraphs on mobile */
+    .content p {
+        font-size: 18px;
+    }
+
+    /* Images on mobile */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Calendar table on mobile */
+    th, td {
+        padding: 6px;
+    }
 }
