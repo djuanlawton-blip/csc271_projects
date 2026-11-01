@@ -127,6 +127,23 @@ button {
     border-radius: 5px;
 }
 
+/* Calculate Progress Button */
+#calculateButton {
+    background-color: #164a91;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Animation */
+#calculateButton:hover {
+    background-color: red;
+    transform: scale(1.05) translateY(-3px);
+}
+
 /* Image styling */
 img {
     float: left;
