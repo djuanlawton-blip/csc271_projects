@@ -108,6 +108,32 @@ Description: Product website Dashboard
                         </tr>
                     </table>
                 </div>
+                <!--Assignment Progress Tracker-->
+                <div class ="progress_tracker">
+                    <h2>Assignment Tracker</h2>
+                    
+                    <p class ="progress_des">
+                        Enter information about your assignments to track procgress.
+                    </p>
+
+                    <label for="TotalAssignments">Total Assignments:</label>
+                    <input type="number" id="totalAssignments" min="1" required>
+
+                    <br>
+
+                    <label for="completedAssignments">Completed Assignments:</label>
+                    <input type="number" id="completedAssignments" min="0" required>
+
+                    <br>
+
+                    <button type="button" id="calculateButton">
+                        Calculate Progress
+                    </button>
+
+                    <p id="progressResult"></p>
+                    <p id="progressMessage"></p>
+                    <p id="thoughtFullMessage"></p>
+                </div>
                 <!--Form to Add a Task-->
                 <h2>Add a Task</h2>
 
@@ -152,6 +178,7 @@ Description: Product website Dashboard
                 </iframe>
             </div>
         </div>
+        <script src="js/designer.js"></script>
 
     </body>
 </html>
