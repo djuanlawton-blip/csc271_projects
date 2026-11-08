@@ -127,8 +127,8 @@ button {
     border-radius: 5px;
 }
 
-/* Calculate Progress Button */
-#calculateButton {
+/* Button Styling */
+.calculateButton {
     background-color: #164a91;
     color: white;
     padding: 12px 20px;
@@ -139,7 +139,7 @@ button {
 }
 
 /* Button Hover Animation */
-#calculateButton:hover {
+.calculateButton:hover {
     background-color: red;
     transform: scale(1.05) translateY(-3px);
 }

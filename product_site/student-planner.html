@@ -78,14 +78,87 @@ Description: Product website homepage
                 <li>Study Sessions</li>
             </ul>
 
-                <!--Second Subheading-->
-                <h2>Ready to take control of your schedule</h2>
+                <!--Assignment Progress Tracker-->
+                <section id="studyPlanner">
+                    <h2>StudySync Assignment Priority Planner</h2>
+
+                    <p>Answer these questions to find out which assignment you should work on first!</p>
+
+                    <!-- Question 1 -->
+                    <div class="question">
+                        <label for="dueDate">
+                            Is your assignment due within 24 hours?
+                        </label>
+
+                        <select id="dueDate">
+                            <option value="">Select an answer</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="question">
+                        <label for="gradeWeight">
+                            Is the assignment worth 20% or more of your grade?
+                        </label>
+
+                        <select id="gradeWeight">
+                            <option value="">Select an answer</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="question">
+                        <label for="difficulty">
+                            Is the assignment difficult or time-consuming?
+                        </label>
+
+                        <select id="difficulty">
+                            <option value="">Select an answer</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <!-- Priority Button -->
+                    <button class="calculateButton" type= "button" id="calculateButton">
+                        Check Assignment Priority
+                    </button>
+
+                    <!-- Print -->
+                    <p id="priorityResult"></p>
+
+                    <!-- Study Tips-->
+                    <h3>Study Tips</h3>
+                    <ul id="studyTips"></ul>
+
+                    <!-- Remaining Assignments -->
+                    <section id="assignmentTracker">
+                        <h3>Remaining Assignments</h3>
+
+                        <label for="assignmentCount">
+                            How many assignments do you have left?
+                        </label>
+
+                        <input type="number" id="assignmentCount" min="0">
+
+                        <button class="calculateButton" type="button" id="showAssignments">
+                            Show Assignments
+                        </button>
+
+                        <ul id="assignmentList"></ul>
+                    </section>
+                </section>
+
 
 
                 <h2>Contact Me</h2>
                 <a href="mailto:djuan.lawton@uri.edu">Contact me</a>
             </div>
         </div>
-
+        <script src="js/forever.js"></script>
     </body>
 </html>
