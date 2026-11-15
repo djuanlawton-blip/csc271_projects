@@ -83,29 +83,18 @@ Description: Product website Dashboard
                     <h2>Track Your Homework and Assignment</h2>
 
                     <table>
-                        <tr>
-                            <th>Tasks</th>
-                            <th>Due Date</th>
-                            <th>Category</th>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Tasks</th>
+                                <th>Due Date</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
 
-                        <tr>
-                            <td>Math homework</td>
-                            <td>October 7</td>
-                            <td>Class</td>
-                        </tr>
+                        <tbody id="taskList">
+                            <!-- JavaScript display function should appear. -->
+                        </tbody>
 
-                        <tr>
-                            <td>English Reading</td>
-                            <td>October 24</td>
-                            <td>Class</td>
-                        </tr>
-
-                        <tr>
-                            <td>Project Research</td>
-                            <td>October 30</td>
-                            <td>Work</td>
-                        </tr>
                     </table>
                 </div>
                 <!--Assignment Progress Tracker-->
@@ -137,7 +126,7 @@ Description: Product website Dashboard
                 <!--Form to Add a Task-->
                 <h2>Add a Task</h2>
 
-                <form>
+                <form id="taskForm">
                     <label for="Task">Task Name:</label>
                     <input type="Text" id="Task" name="Task" required> 
                     
@@ -150,7 +139,7 @@ Description: Product website Dashboard
 
                     <p>Task Type:</p>
 
-                    <input type="radio" id="Class" name="type" value="Class">
+                    <input type="radio" id="Class" name="type" value="Class" required>
                     <label for="Class">Class</label>
 
                     <input type="radio" id="work" name="type" value="work">
@@ -161,7 +150,7 @@ Description: Product website Dashboard
 
                     <br>
 
-                    <input type="submit" value="Add Task">
+                    <input class="calculateButton" type="submit" value="Add Task">
 
                 </form>
                 <!-- Study Tips Video -->
@@ -179,6 +168,7 @@ Description: Product website Dashboard
             </div>
         </div>
         <script src="js/designer.js"></script>
+        <script src="js/functions.js"></script>
 
     </body>
 </html>
