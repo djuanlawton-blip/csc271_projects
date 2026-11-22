@@ -92,7 +92,7 @@ Description: Product website Dashboard
                         </thead>
 
                         <tbody id="taskList">
-                            <!-- JavaScript display function should appear. -->
+                            <!-- display function should appear. -->
                         </tbody>
 
                     </table>
@@ -126,14 +126,16 @@ Description: Product website Dashboard
                 <!--Form to Add a Task-->
                 <h2>Add a Task</h2>
 
-                <form id="taskForm">
+                <form id="taskForm" novalidate>
                     <label for="Task">Task Name:</label>
-                    <input type="Text" id="Task" name="Task" required> 
+                    <input type="Text" id="Task" name="Task" required>
+                    <!--Task Feedback Section-->
+                    <p id = "taskFeedback"></p>
                     
                     <br>
 
                     <label for="Date">Due Date</label>
-                    <input type="date" id="Date" name="Data" required>
+                    <input type="date" id="Date" name="Date" required>
 
                     <br>
 
@@ -151,6 +153,8 @@ Description: Product website Dashboard
                     <br>
 
                     <input class="calculateButton" type="submit" value="Add Task">
+                    <!--Form Feedback Section-->
+                    <p id = "formFeedback"></p>
 
                 </form>
                 <!-- Study Tips Video -->

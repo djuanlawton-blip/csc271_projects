@@ -12,11 +12,12 @@ const taskForm = document.getElementById("taskForm");
 const taskNameInput = document.getElementById("Task");
 const taskDueDateInput = document.getElementById("Date");
 
+
 // Form submission event
 taskForm.addEventListener("submit", function(event) {
 
     // Prevent the webpage from refreshing
-    // AI helped me figure out this event.
+    // AI helped me figure out this event. It stops the page from refreshing on the form submission.
     event.preventDefault();
 
     // User values
@@ -34,15 +35,28 @@ taskForm.addEventListener("submit", function(event) {
     const newTask = addTask(taskName, dueDate, taskType);
 
     if (newTask !== null) {
+
         console.log("Task successfully added!", newTask);
 
-        // Display the updated tasks in the table
-    displayTasks(tasks);
+        // Display updated tasks
+        displayTasks(tasks);
 
-    // Clear the form
-    taskForm.reset();
+        // Display success message
+        document.getElementById("formFeedback").textContent =
+            "Task added successfully!";
+
+        // Clear previous input feedback
+        document.getElementById("taskFeedback").textContent = "";
+
+        // Clear the form
+        taskForm.reset();
+
     } else {
-        console.log("Please complete all fields.");
+
+        // Display error message
+        document.getElementById("formFeedback").textContent =
+            "Please complete all fields.";
+
     }
 });
 
@@ -142,6 +156,22 @@ function displayTasks(taskList) {
         taskTable.appendChild(row);
     });
 }
+// Focus event that tells the user what they need to enter.
+taskNameInput.addEventListener("focus", function() {
+    document.getElementById("taskFeedback").textContent =
+    "Enter a task name to add to your planner.";
+
+});
+
+// Blur event that tells the user they can't leave the text feild empty.
+taskNameInput.addEventListener("blur", function() {
+    if (taskNameInput.value.trim() === "") {
+        document.getElementById("taskFeedback").textContent =
+            "Task name cannot be blank.";
+    } else {
+        document.getElementById("taskFeedback").textContent = "";
+    }
+});
 
 // Display load function
 window.addEventListener("load", function() {
